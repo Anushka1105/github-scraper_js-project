@@ -102,25 +102,7 @@ npx http-server -p 8000
 - Toggle dark/light mode with the icon in the top-right.
 
   
-
-## Notes & limitations
-
-- Uses the public GitHub API without authentication. Unauthenticated requests are rate-limited (typically 60 requests per hour per IP). For higher rate limits, you must proxy requests through a server using a GitHub token (do NOT embed a personal token in client-side code).
-
-- Some profile fields (email, company, twitter_username, location) can be null or empty depending on user privacy/settings.
-
-- Error handling is minimal: if a username doesn't exist or the API fails, the UI does not currently show a user-friendly error message.
-
-- The displayed `created_at` value is the raw ISO timestamp — it is not formatted for readability.
-
-  
-
 ## Contributing
 
 Contributions, issues and feature requests are welcome. If you'd like to add the README to the repository as a commit/PR, I can prepare a patch/PR for you.
 
-  
-
-## License
-
-No license file is provided in the repo. If you'd like, add an open-source license such as MIT by creating a LICENSE file.
